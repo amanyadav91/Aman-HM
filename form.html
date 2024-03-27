@@ -37,7 +37,7 @@
             .form1 img{
               width: 50%;
               height:70vh;
-              margin-left:35%;
+              margin-left:30%;
 
             }
             .form2{
@@ -49,7 +49,34 @@
             .form2 p{
               font-size: 18px;
               text-align: center;
+                margin-top: 10px;
             }
+            .form2 .batn{
+              align-items: center;
+              margin-top: 10px;
+              margin-left:33%;
+              background-color: #c0f5c7;
+              border-radius:30px;
+              width:220px;
+              padding: 6px;
+              padding-left: 23px;
+              margin-bottom: 3px;
+              }
+                .form2 .batn button{
+                    background-color: #c0f5c7;
+                    border: none;
+                    color: rgba(22, 10, 10, 0.879);
+                    font-size:18px;
+                    border-radius:30px;
+                    cursor: pointer;
+                    padding: 7px 18px;
+                     }
+                        .form2 .batn button:hover{
+                            background-color: #5ee470;
+                            color: #000;
+                        }
+                    
+                
       
     </style>
   </head>
@@ -121,11 +148,11 @@
             <button>Login</button> 
             <button>Sign Up</button>
         </div>
-        <form action="login.php" method="post">
-        <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br />
+        <form action="" method="post">
+        <label for="email">Usermail/Email:</label><br/>
+        <input type="email" id="email" name="email" required  placeholder="Enter Username/Email"/><br />
         <label for="password">Password:</label><br />
-        <input type="password" id="password" name="password" required /><br />
+        <input type="password" id="password" name="password" required  placeholder="Enter Password"/><br />
         <input type="submit" value="Login" />
       </form>
       </div>
