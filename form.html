@@ -44,16 +44,16 @@
                 width: 50%;
                 height: 100%;
                 margin: 0 auto;
-                border: 1px solid red;
+                align-items: center;
             }
             .form2 p{
-              font-size: 18px;
+              font-size: 14px;
               text-align: center;
                 margin-top: 10px;
             }
             .form2 .batn{
               align-items: center;
-              margin-top: 10px;
+              margin-top: 20px;
               margin-left:33%;
               background-color: #c0f5c7;
               border-radius:30px;
@@ -66,7 +66,7 @@
                     background-color: #c0f5c7;
                     border: none;
                     color: rgba(22, 10, 10, 0.879);
-                    font-size:18px;
+                    font-size:14px;
                     border-radius:30px;
                     cursor: pointer;
                     padding: 7px 18px;
@@ -75,6 +75,21 @@
                             background-color: #5ee470;
                             color: #000;
                         }
+      label{
+        font-size:14px;
+        margin-left:30%;
+        padding-top: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      input{
+     margin-left:30%;
+     height: 40px;
+     width: 45%;
+     border-radius: 20px;
+     border-color: #3ee154;
+     font-family: "Poppins", sans-serif;
+      }
+
                     
                 
       
@@ -148,12 +163,20 @@
             <button>Login</button> 
             <button>Sign Up</button>
         </div>
+        <br>
         <form action="" method="post">
-        <label for="email">Usermail/Email:</label><br/>
-        <input type="email" id="email" name="email" required  placeholder="Enter Username/Email"/><br />
+        <label for="email">Usermail/Email:</label><br/> 
+        <input type="email" id="email" name="email" required  placeholder="Enter Username/Email"/><br/> <br>
         <label for="password">Password:</label><br />
         <input type="password" id="password" name="password" required  placeholder="Enter Password"/><br />
+        <div class="remember"><input type="checkbox"  name="remember valve">
+        <label for="remember" class="rem">Remember Me</label>
+        <a href="./index.html">Forget Password</a>
+        </div>
         <input type="submit" value="Login" />
+        <p>New Here <a href="./form.html">Signup</a></p>
+
+
       </form>
       </div>
     </div>
