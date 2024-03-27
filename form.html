@@ -13,86 +13,131 @@
     <script src="script.js"></script>
     <title>Login</title>
     <style>
-    
-    body{
+      body {
         background-color: #e2fff1;
-        font-family:"Poppins", sans-serif;
-       }
-   
-       .login{
+        font-family: "Poppins", sans-serif;
+      }
+
+      .login {
         height: 100vh;
-         }
-            .formpage{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 8%;
-            }
+      }
+      .formpage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8%;
+      }
 
-            .form1{
-              width: 50%;
-              height: 100%;
-              margin:0 auto;
-             }
-            .form1 img{
-              width: 50%;
-              height:70vh;
-              margin-left:30%;
-
-            }
-            .form2{
-                width: 50%;
-                height: 100%;
-                margin: 0 auto;
-                align-items: center;
-            }
-            .form2 p{
-              font-size: 14px;
-              text-align: center;
-                margin-top: 10px;
-            }
-            .form2 .batn{
-              align-items: center;
-              margin-top: 20px;
-              margin-left:33%;
-              background-color: #c0f5c7;
-              border-radius:30px;
-              width:220px;
-              padding: 6px;
-              padding-left: 23px;
-              margin-bottom: 3px;
-              }
-                .form2 .batn button{
-                    background-color: #c0f5c7;
-                    border: none;
-                    color: rgba(22, 10, 10, 0.879);
-                    font-size:14px;
-                    border-radius:30px;
-                    cursor: pointer;
-                    padding: 7px 18px;
-                     }
-                        .form2 .batn button:hover{
-                            background-color: #5ee470;
-                            color: #000;
-                        }
-      label{
-        font-size:14px;
-        margin-left:30%;
+      .form1 {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+      }
+      .form1 img {
+        width: 50%;
+        height: 70vh;
+        margin-left: 30%;
+      }
+      .form2 {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+      }
+      .form2 p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .form2 .batn {
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 33%;
+        background-color: #c0f5c7;
+        border-radius: 30px;
+        width: 220px;
+        padding: 6px;
+        padding-left: 23px;
+        margin-bottom: 3px;
+      }
+      .form2 .batn button {
+        background-color: #c0f5c7;
+        border: none;
+        color: rgba(22, 10, 10, 0.879);
+        font-size: 14px;
+        border-radius: 30px;
+        cursor: pointer;
+        padding: 7px 18px;
+      }
+      .form2 .batn button:hover {
+        background-color: #5ee470;
+        color: #000;
+      }
+      label {
+        font-size: 14px;
+        margin-left: 30%;
         padding-top: 20px;
         font-family: "Poppins", sans-serif;
       }
-      input{
-     margin-left:30%;
-     height: 40px;
-     width: 45%;
-     border-radius: 20px;
-     border-color: #3ee154;
-     font-family: "Poppins", sans-serif;
+      input {
+        margin-left: 30%;
+        height: 40px;
+        width: 45%;
+        border: none;
+        border-radius: 20px;
+        border: 1px solid #3ee154;
+        font-family: "Poppins", sans-serif;
+        padding: 20px;
       }
+    .rem{
+        height: 15px;
+        width: 15px;
+        border: 1px solid #3ee154;
+    }
+     .rm{
+        font-size: 14px;
+        margin-left:2px;
+        position: absolute;
+        left: 35%;
+        top: -7px;
+        font-family: "Poppins", sans-serif;
+     }
+    
+    .remember {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        gap: 10px;
+      }
+      .remember a{
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        color: #3ee154;
+        text-decoration: none;
+      }
+        a {
+            text-decoration: none;
+            color: #3ee154;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+        }
+      .sub {
+        background-color: #3ee154;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 7px 18px;
+        margin-left:50%;
+        margin-top: 20px;
+      }
+      .lst
+      {
+       gap: 10px;
 
-                    
-                
-      
+    }
     </style>
   </head>
   <body>
@@ -154,32 +199,45 @@
       </div>
     </nav>
     <div class="login">
-    <div class="formpage">
-     <div class="form1">
-    <img src="./media/login_bg.png" alt="login"></div>
-     <div class="form2">
-        <p>Welcome to Hoping Minds</p>
-        <div class="batn">
-            <button>Login</button> 
+      <div class="formpage">
+        <div class="form1">
+          <img src="./media/login_bg.png" alt="login" />
+        </div>
+        <div class="form2">
+          <p>Welcome to Hoping Minds</p>
+          <div class="batn">
+            <button>Login</button>
             <button>Sign Up</button>
+          </div>
+          <br />
+          <form action="" method="post">
+            <label for="email">Usermail/Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter Username/Email"
+            /><br /><br />
+            <label for="password">Password:</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Enter Password"
+            /><br />
+            <div class="remember">
+              <input type="checkbox" name="remember valve" class="rem"/>
+              <label for="remember"  class="rm">Remember Me</label>
+              <a href="./index.html">Forget Password</a>
+            </div>
+          <button class="sub">Login</button>
+            <br />
+            <div class="lst"><p>New Here<a href="./form.html">Signup</a></p></div>
+          </form>
         </div>
-        <br>
-        <form action="" method="post">
-        <label for="email">Usermail/Email:</label><br/> 
-        <input type="email" id="email" name="email" required  placeholder="Enter Username/Email"/><br/> <br>
-        <label for="password">Password:</label><br />
-        <input type="password" id="password" name="password" required  placeholder="Enter Password"/><br />
-        <div class="remember"><input type="checkbox"  name="remember valve">
-        <label for="remember" class="rem">Remember Me</label>
-        <a href="./index.html">Forget Password</a>
-        </div>
-        <input type="submit" value="Login" />
-        <p>New Here <a href="./form.html">Signup</a></p>
-
-
-      </form>
       </div>
-    </div>
     </div>
   </body>
 </html>
