@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HopingMinds</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+   <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="log">
+        <a href="#"><img src="./media/logo.png" alt="logo" /></a>
+      </div>
+      <div class="menu">
+        <ol class="sidebar">
+        <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M260-319.231q49.693 0 96.693 11.27 47 11.269 93.308 35.346v-393.231q-42.154-27.461-91.231-41.192-49.077-13.731-98.77-13.731-36 0-67.269 5.653-31.269 5.654-64.269 18.5-4.616 1.539-6.539 4.424-1.923 2.885-1.923 6.346v378.307q0 5.385 3.846 7.885 3.847 2.5 8.463.577 28.461-9.692 60.076-14.923Q224-319.231 260-319.231Zm249.999 46.616q46.308-24.077 93.308-35.346 47-11.27 96.693-11.27 36 0 67.615 5.231 31.615 5.231 60.076 14.923 4.616 1.923 8.463-.577 3.846-2.5 3.846-7.885v-378.307q0-3.461-1.923-6.154t-6.539-4.616q-33-12.846-64.269-18.5Q736-720.769 700-720.769q-49.693 0-98.77 13.731t-91.231 41.192v393.231ZM480-201.386q-11.692 0-21.884-2.923t-19.269-7.769q-41.308-23.385-86.424-35.27-45.115-11.884-92.423-11.884-36.615 0-71.922 8.115-35.308 8.115-68.077 23.884-21.384 9.846-40.692-3.115-19.307-12.962-19.307-36.731v-434.305q0-12.923 6.653-24.269 6.654-11.346 19.193-16.346 40.615-19.769 84.653-29.269 44.038-9.5 89.499-9.5 58.385 0 114.077 15.962Q429.769-748.845 480-717.691q50.231-31.154 105.923-47.115Q641.615-780.768 700-780.768q45.461 0 89.499 9.5t84.653 29.269q12.539 5 19.193 16.346 6.654 11.346 6.654 24.269v434.305q0 23.769-20.077 36.346-20.077 12.577-42.231 2.731-32.385-15.384-67.115-23.307-34.73-7.923-70.576-7.923-47.308 0-92.423 11.884-45.116 11.885-86.424 35.27-9.077 4.846-19.269 7.769-10.192 2.923-21.884 2.923ZM285-496.693Zm272.692-108.845q0-6.692 4.769-13.692t10.846-9.615q29.769-11.924 61.27-18.077 31.5-6.154 65.423-6.154 19.615 0 37.961 2.307 18.346 2.308 36.962 6.308 7.077 1.615 12.23 7.692 5.154 6.077 5.154 14.154 0 13.538-8.5 19.807-8.5 6.269-22.038 3.038-14.384-3-29.884-4.307-15.5-1.308-31.885-1.308-29.077 0-56.962 5.577t-53.193 15.115q-14.153 5.462-23.153-.615-9-6.077-9-20.23Zm0 218.461q0-6.692 4.769-13.884t10.846-9.808q29-11.923 61.27-17.884 32.269-5.962 65.423-5.962 19.615 0 37.961 2.308Q756.307-430 774.923-426q7.077 1.616 12.23 7.693 5.154 6.076 5.154 14.153 0 13.538-8.5 19.807-8.5 6.269-22.038 3.039-14.384-3-29.884-4.308-15.5-1.308-31.885-1.308-28.693 0-56.385 5.462-27.693 5.462-53 15.385-14.154 5.846-23.538-.308-9.385-6.154-9.385-20.692Zm0-108.846q0-6.692 4.769-13.692t10.846-9.615q29.769-11.923 61.27-18.077 31.5-6.154 65.423-6.154 19.615 0 37.961 2.308 18.346 2.307 36.962 6.307 7.077 1.616 12.23 7.692 5.154 6.077 5.154 14.154 0 13.538-8.5 19.807-8.5 6.269-22.038 3.039-14.384-3-29.884-4.308-15.5-1.308-31.885-1.308-29.077 0-56.962 5.577t-53.193 15.116q-14.153 5.461-23.153-.616-9-6.076-9-20.23Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Carrier</a></li>
+        <li><a href="#">PAP</a></li>
+        <li><a href="./form.html"><button class="navbtn">Login</button></a></li>
+        <li><a href="./form.html"><button class="navbtn2">Signup</button></a></li>
+        </ol>
+        <ul><li class="hideonmobile"><a href="#">Home</a></li>
+        <li class="hideonmobile"><a href="#">Course</a></li>
+        <li class="hideonmobile"><a href="#">Carrier</a></li>
+        <li class="hideonmobile"><a href="#">PAP</a></li>
+        <li class="hideonmobile"><a href="./form.html"><button class="navbtn">Login</button></a></li>
+        <li class="hideonmobile"><a href="./form.html"><button class="navbtn2">Signup</button></a></li>
+        <li class="hamburger" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M170.001-254.616q-12.75 0-21.375-8.629t-8.625-21.384q0-12.756 8.625-21.371 8.625-8.615 21.375-8.615h619.998q12.75 0 21.375 8.629 8.625 8.628 8.625 21.384 0 12.755-8.625 21.37-8.625 8.616-21.375 8.616H170.001Zm0-195.385q-12.75 0-21.375-8.628-8.625-8.629-8.625-21.384 0-12.756 8.625-21.371 8.625-8.615 21.375-8.615h619.998q12.75 0 21.375 8.628 8.625 8.629 8.625 21.384 0 12.756-8.625 21.371-8.625 8.615-21.375 8.615H170.001Zm0-195.384q-12.75 0-21.375-8.629-8.625-8.628-8.625-21.384 0-12.755 8.625-21.37 8.625-8.616 21.375-8.616h619.998q12.75 0 21.375 8.629t8.625 21.384q0 12.756-8.625 21.371-8.625 8.615-21.375 8.615H170.001Z"/></svg></a></li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <div class="hero">
+        <div class="hero1">
+          <div class="heading">Shape Your Tomorrow,</div>
+          <div class="heading">Today with HopingMinds:</div>
+          <div class="heading">Where Education Meets</div>
+          <div class="heading">Aspiration</div>
+          <div class="heading2">
+            Holistic a development programs that place students in specific high
+            growth roles across 150+ Corporate Partners.
+          </div>
+        </div>
+
+        <div class="hero2">
+          <div class="student">
+            <div class="logo">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIklEQVR4nO1YvU4CQRCeWDEYGwqw0Qp5Bag12hhjrxKi1b2IiQ9wa4T4kxgSsSKhNxIOGiwtfA6jNWtuD8zB/e15wi3LfMk0d3u78303O7OzAARCONAcADIeYBZo7x8GTu5Y2pi7f+hMZLSHU6aaAPPzD0kAThGAtAU45YA2JUFOVaC9CmUQzWNAswvIvt0HisAFFLEI/2wur4DsKIr8VdAC1bv+7+Rnt/3UCSfw7zLkzzO+tsF45aLDq/fOhKX9lvhwu9IUi9iTb5Wb4lnp4Nmj/KJNxj+bS/m8I7gJEbLs0E+Arv3SHuhe4OSmx7FQH80qiYXG6LRupS5AHP9sbs5788UvmXyJUBr/+dlFirstjvmGsOLek3iWNvm4/tncxgJ9+gnA/ZKJbhZcHTD9RLZQIwFmgUHKaIbICNAdfxIAQ+/dvPdvqo1PLgCLl1hUG/9fAhiypUW18SSACxQBjLYAUA5glATBA6QyyENKhxVdd82esuMTVwGdQAIw6gWAegFGZRDkkwOo19xQM8SoGwRqhxndBxiLvhCBFb4Ss5Q621MvkADUCzANeoEk0CIJpiWAoeLRlgSICe0jAKXyic4CsGjyGXOovQCG6/va44DnSg+TeT4ga26ujAA1KfI6lUGXAPLkowVQ92zv9VWMj0feRhyVVcaYR27nfpLw3mH9Oi/9ISw7piNH4s/H3YfLYzHIS+/DJbEMe5MLewKBACuOHzN0G/QKJRlaAAAAAElFTkSuQmCC"
+                width="30px"
+                height="30px"
+              />
+            </div>
+            <div class="student_content">
+              <h3>250k</h3>
+              Students
+            </div>
+          </div>
+
+          <div class="video">
+            <video autoplay loop muted src="media/home_video.mp4""></video>
+          </div>
+
+          <div class="congrats">
+            <div class="logo">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFEUlEQVR4nO1abUwcRRi+X17ZPYr+gOWktbUcVaDs7u2HfIigJdAomKYIiTQN5rRRauCURqIlNljTj0iDijaFxt4BLRUKbaEg3PmRVkvTAi2tP6wmrTWa2Jqa+MdatDbymtl61wPmgNudO0w6T/IkXG72nXmed+a9dzaYTBQUFBQUFBQUFBQUFBQUWJSWnoqqKB3Z4iw7c+HVdWN/VpePAWk6154F1eo1SM8fqtUzrFq9VTbboNlEAmsaajM2bOm8Eg7RgXQUDRMw4A6lZ7ZdlmtflAyJz32v7t4Xhl6+WXlpPTi7G2Br7Xnocv8E/Qd/Dso9Oy/pMqAg7RgZ8Ym9YN+xDvizy4DvzRq31VUt1G1AaWuNF4lH3H/NDX//cwtmw8QEQH3ttyGJL8keIiJeKfgQhAH1tvj/KNY/26XbAMfxynEk/q0fN8GtidnFh2IAOvNo2xPJ/JJ+sG9eD/xo4iTxiEJ3zu+6DXjlNe9fzpNvQMe1fX6BF8e/A9cvzeD+vg1aO85B264f/HQ3XoaqMhLFLISs5zaD0Js1Tbgm/kgWKLlNN3QbUI2y5RgFz9ejfgOarjbemWTEBtKmClAXD0RUtMZFg2Cv3Aj8cNJ08WcSwb61HNSlfdpYYwaUj4G35yreAJ/Th7JByfoocllPbwGx83F81gdUrRYEjidqQPPxo5rD0yYfTgL7xipQEwbDJz7BA9JLrwN/ejlWvLizDJRlR6c9Z9iAge4rfgN277gI8lPvgvCphF9Eex4o8j7yWRfbQWxdhc/65yLIq+uDPmvYgG0138Bvv97UWJx54nZgW492znAL4k89pJ1PlDHD4u/3gOR4E/ihZOxc9vdLQFl+eMYYhg2oDuDU4HLJduCPpeF3w95CUNI69Gc9pQvE3avxJn+1AuS1b88pTlgNUNFCk7vBvmtNkIWmahkMVbxUuh2EL4MYu6cI1NTOOccKuwHqpEWvwC+6+WlQUw/OvuCHD4H4QTHezBMpusyMmAEq2g38xyC6nsQXqy8EkIvfCfqsXNQA/Gf44irszwdFatd1lIgZ4JzrldVXuE7OULiSDk++wBAuqEp8D4hcO4hcKzkDHCFeWRWlDYQDefiMemWQKmpA2lCj/Y0dcyBPixFy/YjvBoFr8ZOYAQV6Li6+ljVI84KlgRYbZT5QPDEDSgxeWZUMNwhdObOKF448Ckq2/rYabXtiBjhJXlkRFw9o7TI/apsufjQR7HXPg/rAJ4bmEONayBmgkhCNofxEEwh9GQEXmEdAzp98gdHLqeL/lwaoiEv7QHpus0bftfXuMsAaHlIDOLoDgB4BjtYAoEWQo78CQH8GOdoHAG2EOEOdoOf6fHd2oVCO78N0gq7rRgwYIb3IwDc1uK6NNNM49zkDBnirSIqf+qYmMmyr0W2AzTZoVuI950llPtLi+Tj3BZut0di/ymQs6k8gYQLuTU24xdvj9y4xkUBKStc9stVbqVi9p/UWRtybGuKMc93g41xjaNsbzjwFBQUFBUVIMMfExNzHMIzVbDY/aLFYkhmGsUcvWJBlsVges1gsOSzLrmRZNo9hmFWI0QxThOj7jL5DY9BY9Ax6FsVAsVBMFBvNgeYyzTdiY2MtC83mxOioqHSGYQp8YiJFbc6oqHS0Bo7j2IiKZxhGiGaYwkiLnoGFLMvyETOAZVn+rjYAAW27+TwCLMvmo7nN83EETHgEK4KZU4rgyhmKoPZ9QBHMDHcR/BezNtBqUtFIiAAAAABJRU5ErkJggg=="
+                height="35px"
+                width="35px"
+              />
+            </div>
+            <div class="congrats_content">
+              <h3>Congratulations</h3>
+              Your admission completed
+            </div>
+          </div>
+
+          <div class="experince">
+            <div class="logo">
+              <img src="media/dp.png" alt="dp images" />
+            </div>
+            <div class="experince_content">
+              <h3>User Experience Class</h3>
+              <p>Today at 12.00 PM</p>
+              <button>Join Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- About Section -->
+    <div class="ab">Trusted by 5,000+ Companies Worldwide</div>
+  </body>
+</html>
